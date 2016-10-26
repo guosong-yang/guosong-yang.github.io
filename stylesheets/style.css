@@ -1,5 +1,4 @@
 html * {
-    font-size: 1em;
     font-family: "Open Sans", sans-serif;
 }
 
@@ -28,7 +27,8 @@ a.nav:hover {
 }
 
 a.nav.current {
-    border-bottom-color: royalblue;
+    background-color: orange;
+    color: white;
 }
 
 hr.section {
@@ -40,8 +40,6 @@ hr.section {
 }
 
 hr.section.nav {
-    position: absolute;
-    z-index: -100;
     background-color: red;
     height: 2px;
     margin-top: -2px

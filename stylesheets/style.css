@@ -7,8 +7,8 @@ a {
 }
 
 a.nav {
-    background-color: silver;
-    border: 2px solid silver;
+    background-color: lightgray;
+    border: 2px solid lightgray;
     color: white;
     padding: 6px 12px 4px 12px;
     text-align: center;
@@ -42,5 +42,7 @@ hr.section {
 }
 
 hr.section.nav {
+    position: relative
+    z-index: 1;
     margin-top: -1px
 }

@@ -7,7 +7,7 @@ a {
     color: royalblue
 }
 
-.hrSec {
+hr.section {
     border: 0;
     color: orange;
     background-color: orange;

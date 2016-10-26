@@ -7,9 +7,9 @@ a {
 }
 
 a.nav {
-    background-color: lightgray;
-    border: 2px solid lightgray;
-    color: white;
+    background-color: white;
+    border: 2px solid orange;
+    color: orange;
     padding: 6px 12px 4px 12px;
     text-align: center;
     text-decoration: none;
@@ -22,9 +22,7 @@ a.nav {
 }
 
 a.nav:hover {
-    background-color: tomato;
-    border-color: tomato;
-    color: white;
+    color: tomato;
 }
 
 a.nav.current {
@@ -42,7 +40,5 @@ hr.section {
 }
 
 hr.section.nav {
-    position: relative
-    z-index: 1;
     margin-top: -1px
 }

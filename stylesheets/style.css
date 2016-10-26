@@ -29,6 +29,7 @@ a.nav:hover {
 
 a.nav.current {
     border-bottom: white;
+    z-index: 0;
 }
 
 hr.section {

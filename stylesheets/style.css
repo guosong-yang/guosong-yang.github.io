@@ -33,6 +33,8 @@ a.nav.current {
 }
 
 a.nav.current:hover {
+    background-color: white;
+    color: orange;
 }
 
 hr.section {

@@ -8,7 +8,7 @@ a {
 
 a.nav {
     background-color: white;
-    border: 0;
+    border: 2px solid white;
     color: orange;
     padding: 6px 12px 4px 12px;
     text-align: center;
@@ -23,14 +23,12 @@ a.nav {
 
 a.nav:hover {
     background-color: orange;
-    border: 2px solid orange;
+    border-color: orange;
     color: white;
 }
 
 a.nav.current {
-    background-color: white;
-    border: 2px solid orange;
-    color: orange;
+    border-color: orange;
 }
 
 hr.section {
@@ -39,8 +37,4 @@ hr.section {
     background-color: orange;
     height: 5px;
     width: 100%;
-}
-
-hr.section.nav {
-    margin-top: -2px
 }

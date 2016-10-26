@@ -1,11 +1,12 @@
 html * {
-    font: Arial, Helvetica, sans-serif
+    font-family: Verdana, Arial, sans-serif
 }
 hr {
     border: 0;
     color: orange;
     background-color: orange;
     height: 5px;
+    width: 100%;
 }
 a {
     color: royalblue

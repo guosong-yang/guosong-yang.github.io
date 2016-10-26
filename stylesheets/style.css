@@ -1,10 +1,10 @@
 html * {
-    font-size: 1em
-    font-family: "Open Sans", sans-serif
+    font-size: 1em;
+    font-family: "Open Sans", sans-serif;
 }
 
 a {
-    color: royalblue
+    color: royalblue;
 }
 
 a.nav {
@@ -28,7 +28,7 @@ a.nav:hover {
 }
 
 a.nav.current {
-    border-bottom: white;
+    border-bottom: royalblue;
 }
 
 hr.section {

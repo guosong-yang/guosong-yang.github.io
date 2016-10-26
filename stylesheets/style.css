@@ -28,7 +28,7 @@ a.nav:hover {
 }
 
 a.nav.current {
-    border-bottom: royalblue;
+    border-bottom-color: royalblue;
 }
 
 hr.section {

@@ -31,7 +31,7 @@ button.nav {
     text-decoration: none;
     display: inline-block;
     font-size: 1em;
-    margin: 4px 2px;
+    margin: 4px 2px 0px 2px;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;

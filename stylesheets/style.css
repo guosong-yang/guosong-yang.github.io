@@ -7,8 +7,8 @@ a {
 }
 
 a.nav {
-    background-color: darkgray;
-    border: 2px solid orange;
+    background-color: lightgray;
+    border: 2px solid lightgray;
     color: white;
     padding: 6px 12px 6px 12px;
     text-align: center;
@@ -23,11 +23,13 @@ a.nav {
 
 a.nav:hover {
     background-color: darkorange;
+    border-color: darkorange;
     color: white;
 }
 
 a.nav.current {
     background-color: orange;
+    border-color: orange;
     color: white;
 }
 

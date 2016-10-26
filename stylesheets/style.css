@@ -29,8 +29,6 @@ a.nav:hover {
 
 a.nav.current {
     border-bottom: white;
-    position: absolute;
-    z-index: 0;
 }
 
 hr.section {

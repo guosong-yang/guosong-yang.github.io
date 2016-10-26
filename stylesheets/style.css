@@ -7,9 +7,9 @@ a {
 }
 
 a.nav {
-    background-color: white;
+    background-color: darkgray;
     border: 2px solid orange;
-    color: black;
+    color: white;
     padding: 6px 12px 6px 12px;
     text-align: center;
     text-decoration: none;
@@ -22,7 +22,7 @@ a.nav {
 }
 
 a.nav:hover {
-    background-color: orange;
+    background-color: darkorange;
     color: white;
 }
 

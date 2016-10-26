@@ -1,4 +1,4 @@
-body {
+html * {
     font: Arial, Helvetica, sans-serif
 }
 hr {
@@ -6,8 +6,6 @@ hr {
     color: orange;
     background-color: orange;
     height: 5px;
-    width: 80%;
-    align: left
 }
 a {
     color: royalblue

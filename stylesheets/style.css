@@ -9,6 +9,7 @@ a {
 a.nav {
     background-color: white;
     border: 2px solid white;
+    border-radius: 4px;
     color: orange;
     padding: 4px 8px 2px 8px;
     text-align: center;
@@ -29,6 +30,9 @@ a.nav:hover {
 
 a.nav.current {
     border-color: orange;
+}
+
+a.nav.current:hover {
 }
 
 hr.section {

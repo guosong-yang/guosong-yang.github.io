@@ -1,11 +1,23 @@
 <!doctype html>
 <html lang="en">
 <head>
-        <meta charset="utf-8">
-        <title>Guosong Yang's publications and preprints</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://guosong-yang.github.io/css/main.css">
-        <script type="text/javascript" src="https://guosong-yang.github.io/js/main.js"></script>
+    <meta charset="utf-8">
+    <title>Guosong Yang's publications and preprints</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://guosong-yang.github.io/css/main.css">
+    <script type="text/javascript" src="https://guosong-yang.github.io/js/main.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+                           extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js"],
+                           jax: ["input/TeX", "output/HTML-CSS"],
+                           tex2jax: {
+                           inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                           displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                           },
+                           "HTML-CSS": { availableFonts: ["TeX"] }
+                           });
+    </script>
+    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
 </head>
 
 <nav style="margin-bottom: 20px">
@@ -24,7 +36,7 @@
 		<a class="absToggle" onclick="absShow('absMYLAutomaticaShow'); absHide('absMYLAutomaticaHide')">&darr;Abstract</a>
 	</span>
 	<span id="absMYLAutomaticaShow" style="display: none">
-		<a class="absToggle" onclick="absHide('absMYLAutomaticaShow'); absShow('absMYLAutomaticaHide')">&uarr;Abstract:</a> We prove a novel Lyapunov-based small-gain theorem for networks of n &ge; 2 hybrid systems which are not necessarily input-to-state stable. This result unifies and extends several small-gain theorems for hybrid and impulsive systems proposed in the last few years. We also show how average dwell-time (ADT) clocks and reverse ADT clocks can be used to modify the Lyapunov functions for subsystems and to enlarge the applicability of the derived small-gain theorems.
+		<a class="absToggle" onclick="absHide('absMYLAutomaticaShow'); absShow('absMYLAutomaticaHide')">&uarr;Abstract:</a> We prove a novel Lyapunov-based small-gain theorem for networks of $ n \geq 2 $ hybrid systems which are not necessarily input-to-state stable. This result unifies and extends several small-gain theorems for hybrid and impulsive systems proposed in the last few years. We also show how average dwell-time (ADT) clocks and reverse ADT clocks can be used to modify the Lyapunov functions for subsystems and to enlarge the applicability of the derived small-gain theorems.
 	</span>
 	<br>
 	<a href="https://guosong-yang.github.io/resources/YL-InterSw-SCL2015.pdf">"A Lyapunov-based small-gain theorem for interconnected switched systems"</a> (with D. Liberzon), <i>Systems &amp; Control Letters</i>, 78:47–54, 2015<br>

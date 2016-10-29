@@ -1,11 +1,23 @@
 <!doctype html>
 <html lang="en">
 <head>
-        <meta charset="utf-8">
-        <title>Guosong Yang's homepage</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://guosong-yang.github.io/css/main.css">
-        <script type="text/javascript" src="https://guosong-yang.github.io/js/main.js"></script>
+    <meta charset="utf-8">
+    <title>Guosong Yang's homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://guosong-yang.github.io/css/main.css">
+    <script type="text/javascript" src="https://guosong-yang.github.io/js/main.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            },
+            "HTML-CSS": { availableFonts: ["TeX"] }
+        });
+    </script>
+    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
 </head>
 
 <nav style="margin-bottom: 16px">

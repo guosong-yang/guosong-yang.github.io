@@ -11,7 +11,7 @@ body {
     color: black;
     max-width: 960px;
     margin: 0 auto;
-    padding: 32px
+    padding: 16px 4%
 }
 
 a {
@@ -64,6 +64,6 @@ hr.section {
     color: orange;
     background-color: orange;
     height: 4px;
-    width: 102%;
-    margin-left: -1%
+    width: 104%;
+    margin-left: -2%
 }

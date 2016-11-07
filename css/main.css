@@ -6,12 +6,21 @@ html {
     background-color: whitesmoke;
 }
 
+nav {
+	background-color: gray;
+	width: 100%;
+	padding: 0 2%;
+	margin-left: -2%;
+	position: fixed;
+	top: 0px;
+}
+
 body {
-    background: white;
+    background-color: white;
     color: black;
-    max-width: 960px;
+	max-width: 960px;
+    padding: 40px 4%;
     margin: 0 auto;
-    padding: 16px 4%
 }
 
 a {
@@ -19,16 +28,14 @@ a {
 }
 
 a.nav {
-    background-color: white;
-    border: 2px solid white;
-    border-radius: 4px;
-    color: orange;
-    padding: 4px 8px 4px 8px;
+    background-color: inherit;
+    color: white;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 1em;
-    margin: 4px 2px 0px 2px;
+    padding: 12px;
+    margin: 0;
     -webkit-transition-duration: 0.4s;
     /* Safari */
     transition-duration: 0.4s;
@@ -36,18 +43,15 @@ a.nav {
 }
 
 a.nav:hover {
-    background-color: orange;
-    border-color: orange;
-    color: white;
+    background-color: black;
 }
 
 a.nav.current {
-    border-color: orange;
+    background-color: orange;
 }
 
 a.nav.current:hover {
-    background-color: white;
-    color: orange;
+    background-color: orange;
 }
 
 a.absToggle {
@@ -60,10 +64,10 @@ a.absToggle:hover {
 }
 
 hr.section {
-    border: 0;
-    color: orange;
     background-color: orange;
+    color: orange;
+    border: 0;
     height: 4px;
     width: 104%;
-    margin-left: -2%
+	margin-left: -2%;
 }

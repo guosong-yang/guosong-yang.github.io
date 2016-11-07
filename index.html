@@ -21,24 +21,38 @@
 </head>
 
 <nav>
-	<a class="nav current" href="">Home</a><a class="nav" href="https://guosong-yang.github.io/publications.html">Publications</a>
+	<ul class="nav" id="navList">
+		<li><a class="current" href="javascript: void(0);">Home</a></li>
+		<li><a href="https://guosong-yang.github.io/publications.html">Publications</a></li>
+		<li class="menu"><a href="javascript: void(0);" style="font-size: 15px;" onclick="navClick()">☰</a></li>
+	</ul>
+	<script>
+		function navClick() {
+			var x = document.getElementById("navList");
+			if (x.className === "nav") {
+				x.className += " responsive";
+			} else {
+				x.className = "nav";
+			}
+		}
+	</script>
 </nav>
 
 <body>
-        <div style="margin-top: 16px; margin-bottom: 16px">
-                <div style="float: left; margin-right: 16px">
-		      <a href="https://guosong-yang.github.io/resources/GuosongYangHeadshot.jpg"><img src="https://guosong-yang.github.io/resources/GuosongYangHeadshot.jpg" height="200" width="150"></a>
-	       </div>
-	       <div style="min-height: 200px">
-		      <h1 style="line-height: 1.5; margin-bottom: 12px">Guosong Yang</h1>
-		      <a href="http://www.ece.illinois.edu">Department of Electrical and Computer Engineering</a><br>
-		      <a href="http://csl.illinois.edu">Coordinated Science Laboratory</a><br>
-		      <a href="http://illinois.edu">University of Illinois at Urbana-Champaign</a>
-	       </div>
-        </div>
+	<div style="margin-top: 16px; margin-bottom: 16px;">
+		<div style="float: left; margin-right: 16px;">
+			<a href="https://guosong-yang.github.io/resources/GuosongYangHeadshot.jpg"><img src="https://guosong-yang.github.io/resources/GuosongYangHeadshot.jpg" height="200" width="150"></a>
+		</div>
+		<div style="min-height: 200px;">
+			<h1 style="line-height: 1.5; margin-bottom: 12px;">Guosong Yang</h1>
+			<a style="margin-bottom: 12px;" href="http://www.ece.illinois.edu">Department of Electrical and Computer Engineering</a><br>
+			<a href="http://csl.illinois.edu">Coordinated Science Laboratory</a><br>
+			<a href="http://illinois.edu">University of Illinois at Urbana-Champaign</a>
+		</div>
+	</div>
 	
 	<hr class="section">
-	<h3><a name="Contact" style="color: black">Contact</a></h3>
+	<h3><a name="Contact" style="color: black;">Contact</a></h3>
 	Coordinated Science Laboratory (MC-228)<br>
 	University of Illinois at Urbana-Champaign<br>
 	1308 W. Main Street<br>
@@ -47,8 +61,9 @@
 	Email: yang150@illinois.edu<br>
 	Phone: +1 (217) 979-8066<br>
 	<br>
+	
 	<hr class="section">
-	<h3><a name="Education" style="color: black">Education</a></h3>
+	<h3><a name="Education" style="color: black;">Education</a></h3>
 	Ph.D. candidate in Electrical and Computer Engineering, University of Illinois at Urbana-Champaign, 2013&ndash;present<br>
 	Thesis advisor: <a href="http://liberzon.csl.illinois.edu/">Daniel Liberzon</a><br>
 	<br>
@@ -65,25 +80,25 @@
 	<br>
 	
 	<hr class="section">
-	<h3><a name="Research" style="color: black">Research interests</a></h3>
+	<h3><a name="Research" style="color: black;">Research interests</a></h3>
 	<ul>
 		<li>Switched and hybrid systems</li>
 		<li>Control with limited information</li>
 		<li>Nonlinear systems and control theory</li>
 	</ul>
 	A list of <a href="https://guosong-yang.github.io/publications.html">publications and preprints</a><br>
-        <br>
-
-        <hr class="section">
+	<br>
+	
+	<hr class="section">
 	<!-- Start of StatCounter Code for Default Guide -->
-        <script type="text/javascript">
-                var sc_project=11148970;
-                var sc_invisible=0;
-                var sc_security="2ae718cc";
-                var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "http://www.");
-                document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
-        </script>
-        <noscript><div class="statcounter"><a title="web analytics" href="http://statcounter.com/web-analytics/" target="_blank"><img class="statcounter" src="//c.statcounter.com/11148970/0/2ae718cc/0/" alt="web analytics"></a></div></noscript>
-        <!-- End of StatCounter Code for Default Guide -->
+	<script type="text/javascript">
+		var sc_project=11148970;
+		var sc_invisible=0;
+		var sc_security="2ae718cc";
+		var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "http://www.");
+		document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+	</script>
+	<noscript><div class="statcounter"><a title="web analytics" href="http://statcounter.com/web-analytics/" target="_blank"><img class="statcounter" src="//c.statcounter.com/11148970/0/2ae718cc/0/" alt="web analytics"></a></div></noscript>
+	<!-- End of StatCounter Code for Default Guide -->
 </body>
 </html>

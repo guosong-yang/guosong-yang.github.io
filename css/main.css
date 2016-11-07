@@ -1,16 +1,12 @@
-html * {
-    font-family: "Open Sans", sans-serif;
-}
+html * {font-family: "Open Sans", sans-serif;}
 
-html {
-    background-color: whitesmoke;
-}
+html {background-color: whitesmoke;}
 
 nav {
 	background-color: gray;
 	width: 92%;
 	max-width: 960px;
-    padding: 0 2%;
+	padding: 0 2%;
 	margin-left: -2%;
 	position: fixed;
 	top: 0px;
@@ -24,45 +20,70 @@ body {
     margin: 0 auto;
 }
 
-a {
-    color: royalblue;
+a {color: royalblue;}
+
+ul.nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: gray;
 }
 
-a.nav {
-    background-color: inherit;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1em;
-    padding: 12px;
-    margin: 0;
-    -webkit-transition-duration: 0.4s;
+ul.nav li {float: left;}
+
+ul.nav li a {
+	display: inline-block;
+	color: white;
+    font-size: 17px;
+	text-align: center;
+	text-decoration: none;
+	padding: 12px;
+	-webkit-transition-duration: 0.4s;
     /* Safari */
-    transition-duration: 0.4s;
+	transition-duration: 0.4s;
     cursor: pointer;
 }
 
-a.nav:hover {
-    background-color: black;
+ul.nav li a:hover {background-color: black;}
+
+ul.nav li a.current {background-color: orange;}
+
+ul.nav li a.current:hover {background-color: orange;}
+
+ul.nav li.menu {display: none;}
+
+@media screen and (max-width:680px) {
+	ul.nav li:not(:first-child) {display: none;}
+	ul.nav li.menu {
+		float: right;
+		display: inline-block;
+	}
 }
 
-a.nav.current {
-    background-color: orange;
-}
-
-a.nav.current:hover {
-    background-color: orange;
+@media screen and (max-width:680px) {
+	ul.nav.responsive {position: relative;}
+	ul.nav.responsive li.menu {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	ul.nav.responsive li {
+		float: none;
+		display: inline;
+	}
+	ul.nav.responsive li a {
+		display: block;
+		text-align: left;
+	}
 }
 
 a.absToggle {
     text-decoration: none;
-    cursor: pointer
+    cursor: pointer;
 }
 
-a.absToggle:hover {
-    text-decoration: underline
-}
+a.absToggle:hover {text-decoration: underline;}
 
 hr.section {
     background-color: orange;

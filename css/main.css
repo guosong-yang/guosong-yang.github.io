@@ -54,7 +54,7 @@ ul.nav li a.current:hover {background-color: orange;}
 ul.nav li.menu {display: none;}
 
 @media screen and (max-width:680px) {
-	ul.nav li:not(:first-child) {display: none;}
+	ul.nav li:not(: first-child) {display: none;}
 	ul.nav li.menu {
 		float: right;
 		display: inline-block;
@@ -93,3 +93,4 @@ hr.section {
     width: 104%;
 	margin-left: -2%;
 }
+

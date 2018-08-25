@@ -9,7 +9,7 @@ nav {
 	padding: 0 2%;
 	margin-left: -2%;
 	position: fixed;
-	top: 0px;
+	top: 0;
 }
 
 body {
@@ -35,10 +35,10 @@ ul.nav li {float: left;}
 ul.nav li a {
 	display: inline-block;
 	color: white;
-    font-size: 17px;
+    font-size: 1.05em;
 	text-align: center;
 	text-decoration: none;
-	padding: 12px;
+	padding: .7em;
 	-webkit-transition-duration: 0.4s;
     /* Safari */
 	transition-duration: 0.4s;
@@ -79,33 +79,37 @@ ul.nav li.menu {display: none;}
 }
 
 a.absToggle {
-	font-size: 14px;
+	font-size: .875em;
     text-decoration: none;
     cursor: pointer;
+}
+
+a.absToggle.more {
+	font-size: 1em;
 }
 
 a.absToggle:hover {text-decoration: underline;}
 
 p.abs {
-	font-size: 14px;
-    margin-left: 20px;
-    margin-right: 20px;
+	font-size: .875em;
+    margin-left: 1em;
+    margin-right: 1em;
 	text-align: justify;
 }
 
 p.abs.more {
-	text-indent: 14px;	
+	text-indent: 1em;	
 }
 
 div.slides {
-	font-size: 14px;
+	font-size: .875em;
 }
 
 hr.section {
     background-color: orange;
     color: orange;
     border: 0;
-    height: 4px;
+    height: .25em;
     width: 104%;
 	margin-left: -2%;
 }

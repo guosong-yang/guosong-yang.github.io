@@ -113,3 +113,7 @@ hr.section {
     width: 104%;
 	margin-left: -2%;
 }
+
+a.invisible {
+	display: none;
+}

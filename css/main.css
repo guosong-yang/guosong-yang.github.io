@@ -1,13 +1,15 @@
 html * {font-family: "Open Sans", sans-serif;}
 
-html {background-color: whitesmoke;}
+html {
+    background-color: whitesmoke;
+}
 
 nav {
 	background-color: gray;
 	width: 92%;
 	max-width: 960px;
+    margin-left: -2%;
 	padding: 0 2%;
-	margin-left: -2%;
 	position: fixed;
 	top: 0;
 }
@@ -16,11 +18,42 @@ body {
     background-color: white;
     color: black;
 	max-width: 960px;
-    padding: 40px 4%;
     margin: 0 auto;
+    padding: 40px 4%;
 }
 
-a {color: royalblue;}
+a {
+    color: royalblue;
+}
+
+h3 {
+    margin: 12px 0 12px 0;
+}
+
+div {
+    margin: 0 0 12px 0;
+}
+
+ul {
+    margin: 0 0 20px 0;
+    padding: 0 0 0 1em;
+}
+
+li {
+    margin: 0 0 12px 0;
+}
+
+ul.tight li {
+    margin: 0 0 6px 0;
+}
+
+ul.loose {
+    margin: 0 0 32px 0;
+}
+
+ul.loose li {
+    margin: 0 0 20px 0;
+}
 
 ul.nav {
 	list-style-type: none;
@@ -30,7 +63,10 @@ ul.nav {
 	background-color: gray;
 }
 
-ul.nav li {float: left;}
+ul.nav li {
+    float: left;
+    margin: 0;
+}
 
 ul.nav li a {
 	display: inline-block;
@@ -45,16 +81,24 @@ ul.nav li a {
     cursor: pointer;
 }
 
-ul.nav li a:hover {background-color: black;}
+ul.nav li a:hover {
+    background-color: black;
+}
 
-ul.nav li a.current {background-color: orange;}
+ul.nav li a.current {
+    background-color: orange;
+}
 
-ul.nav li a.current:hover {background-color: orange;}
+ul.nav li a.current:hover {
+    background-color: orange;
+}
 
-ul.nav li.menu {display: none;}
+ul.nav li.menu {
+    display: none;
+}
 
 @media screen and (max-width:680px) {
-	ul.nav li:not(: first-child) {display: none;}
+	ul.nav li:not(: first-child) {display: none}
 	ul.nav li.menu {
 		float: right;
 		display: inline-block;
@@ -62,7 +106,7 @@ ul.nav li.menu {display: none;}
 }
 
 @media screen and (max-width:680px) {
-	ul.nav.responsive {position: relative;}
+	ul.nav.responsive {position: relative}
 	ul.nav.responsive li.menu {
 		position: absolute;
 		right: 0;
@@ -85,19 +129,21 @@ a.absToggle {
 }
 
 a.absToggle.more {
-	font-size: 1em;
+    font-size: 1em;
 }
 
-a.absToggle:hover {text-decoration: underline;}
+a.absToggle:hover {
+    text-decoration: underline;
+}
 
 p.abs {
 	font-size: .875em;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin: 12px 1em 20px 1em;
 	text-align: justify;
 }
 
 p.abs.more {
+    margin: -8px 1em 20px 1em;
 	text-indent: 1em;	
 }
 
@@ -109,11 +155,7 @@ hr.section {
     background-color: orange;
     color: orange;
     border: 0;
-    height: .25em;
+    height: 4px;
     width: 104%;
 	margin-left: -2%;
-}
-
-a.invisible {
-	display: none;
 }

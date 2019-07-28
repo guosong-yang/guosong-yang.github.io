@@ -17,7 +17,7 @@ nav {
 body {
     background-color: white;
     color: black;
-	max-width: 960px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 40px 4%;
 }
@@ -56,11 +56,11 @@ ul.loose li {
 }
 
 ul.nav {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: gray;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray;
 }
 
 ul.nav li {
@@ -69,15 +69,15 @@ ul.nav li {
 }
 
 ul.nav li a {
-	display: inline-block;
-	color: white;
+    display: inline-block;
+    color: white;
     font-size: 1.05em;
-	text-align: center;
-	text-decoration: none;
-	padding: .7em;
-	-webkit-transition-duration: 0.4s;
+    text-align: center;
+    text-decoration: none;
+    padding: .7em;
+    -webkit-transition-duration: 0.4s;
     /* Safari */
-	transition-duration: 0.4s;
+    transition-duration: 0.4s;
     cursor: pointer;
 }
 
@@ -98,32 +98,36 @@ ul.nav li.menu {
 }
 
 @media screen and (max-width:680px) {
-	ul.nav li:not(: first-child) {display: none}
-	ul.nav li.menu {
-		float: right;
-		display: inline-block;
-	}
+    ul.nav li:not(: first-child) {
+        display: none;
+    }
+    ul.nav li.menu {
+        float: right;
+        display: inline-block;
+    }
 }
 
 @media screen and (max-width:680px) {
-	ul.nav.responsive {position: relative}
-	ul.nav.responsive li.menu {
-		position: absolute;
-		right: 0;
-		top: 0;
-	}
-	ul.nav.responsive li {
-		float: none;
-		display: inline;
-	}
-	ul.nav.responsive li a {
-		display: block;
-		text-align: left;
-	}
+    ul.nav.responsive {
+        position: relative;
+    }
+    ul.nav.responsive li.menu {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    ul.nav.responsive li {
+        float: none;
+        display: inline;
+    }
+    ul.nav.responsive li a {
+        display: block;
+        text-align: left;
+    }
 }
 
 a.absToggle {
-	font-size: .875em;
+    font-size: .875em;
     text-decoration: none;
     cursor: pointer;
 }
@@ -137,18 +141,18 @@ a.absToggle:hover {
 }
 
 p.abs {
-	font-size: .875em;
+    font-size: .875em;
     margin: 12px 1em 20px 1em;
-	text-align: justify;
+    text-align: justify;
 }
 
 p.abs.more {
     margin: -8px 1em 20px 1em;
-	text-indent: 1em;	
+    text-indent: 1em;
 }
 
 div.slides {
-	font-size: .875em;
+    font-size: .875em;
 }
 
 hr.section {
@@ -157,5 +161,5 @@ hr.section {
     border: 0;
     height: 4px;
     width: 104%;
-	margin-left: -2%;
+    margin-left: -2%;
 }

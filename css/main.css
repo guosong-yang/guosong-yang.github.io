@@ -98,8 +98,17 @@ ul.nav li a.current:hover {
     background-color: orange;
 }
 
+ul.nav li.lang {
+    float: right;
+    margin: 0;
+}
+
 ul.nav li.menu {
     display: none;
+}
+
+ul.nav li.menu a {
+    font-size: 1.01em;
 }
 
 @media screen and (max-width:680px) {

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>杨国松的个人主页</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js"],
+			jax: ["input/TeX", "output/HTML-CSS"],
+			tex2jax: {
+				inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+				displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+			},
+			"HTML-CSS": { availableFonts: ["TeX"] }
+		});
+	</script>
+	<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
+</head>
+
+<nav>
+	<ul class="nav" id="navList">
+		<li><a class="current" href="javascript: void(0)" style="font-size: 1em">主页</a></li>
+		<li><a href="publications.html" style="font-size: 1em">论文列表</a></li>
+		<li class="menu"><a href="javascript: void(0)" onclick="navClick()">☰</a></li>
+        <li class="lang"><a href="index.html">English</a></li>
+	</ul>
+	<script>
+		function navClick() {
+			var x = document.getElementById("navList");
+			if (x.className === "nav") {
+				x.className += " responsive";
+			} else {
+				x.className = "nav";
+			}
+		}
+	</script>
+</nav>
+
+<body>
+	<div style="margin-top: 12px; margin-bottom: 12px">
+		<div style="float: left; margin-right: 12px">
+			<a href="resources/GuosongYangHeadshot.jpg"><img src="resources/GuosongYangHeadshot.jpg" height="200" width="150"></a>
+		</div>
+		<div style="min-height: 200px; margin-left: 162px">
+			<h1 style="line-height: 1.5; margin-bottom: 12px">杨国松</h1>
+			<ul class="tight" style="list-style-type: none; padding-left: 0">
+				<li>博士后</li>
+				<li><a href="https://www.ccdc.ucsb.edu/">控制、动态系统和运算中心</a></li>
+				<li><a href="http://www.ece.ucsb.edu/">电子与计算机工程学系</a></li>
+				<li><a href="http://www.ucsb.edu/">加利福尼亚大学圣巴巴拉分校</a></li>
+				<li>导师：<a href="https://www.ece.ucsb.edu/~hespanha/">Jo&atilde;o P. Hespanha 教授</a></li>
+		</div>
+	</div>
+	
+    <hr class="section">
+    <h3><a name="News" style="color: black">新闻</a></h3>
+    <ul>
+        <li>我们的论文 <a href="resources/YSLH-SwTopEnt-MCSS.pdf">"Topological entropy of switched linear systems: General matrices and matrices with commutation relations"</a> 即将在 <i>Mathematics of Control, Signals, and Systems</i> 发表</li>
+        <li>我们的论文 <a href="resources/YPH-StbgAdptCtrl-CDC2019.pdf">"Adaptive learning in two-player Stackelberg games with continuous action sets"</a> 在 <i>58th IEEE Conference on Decision and Control (CDC 2019)</i> 发表了</li>
+        <li>我们的论文 <a href="resources/YHL-SwTopEntGES-HSCC2019.pdf">"On topological entropy and stability of switched linear systems"</a> 在 <i>22nd ACM International Conference on Hybrid Systems: Computation and Control (HSCC 2019)</i> 获得了 <strong>ACM SIGBED HSCC Best Paper Award</strong></li>
+    </ul>
+    
+    <hr class="section">
+    <h3><a name="Contact" style="color: black">联系方式</a></h3>
+    <div>
+        5152 Harold Frank Hall<br>
+        ECE Department<br>
+        University of California<br>
+        Santa Barbara, CA 93106-9560 USA
+    </div>
+    <div style="margin-bottom: 20px">
+        guosongyang@ucsb.edu<br>
+        +1 (217) 979-8066
+    </div>
+    
+    <hr class="section">
+	<h3><a name="Education" style="color: black">教育经历</a></h3>
+    <ul style="list-style-type: none; padding-left: 0">
+        <li>博士（电子与计算机工程学），伊利诺伊大学厄巴纳-尚佩恩分校，美国，2013年10月&ndash;2017年8月<br>
+            导师：<a href="http://liberzon.csl.illinois.edu/">Daniel Liberzon 教授</a></li>
+        <li>博士（电子与计算机工程学），伊利诺伊大学厄巴纳-尚佩恩分校，美国，2011年8月&ndash;2013年8月<br>
+            导师：<a href="http://liberzon.csl.illinois.edu/">Daniel Liberzon 教授</a></li>
+        <li>学士（电子工程学，辅修数学），香港科技大学，中国香港，2007年9月&ndash;2011年6月<br>
+            导师：<a href="https://www.ece.ust.hk/eezxli">李泽湘教授</a></li>
+        <li><a href="resources/GuosongYangCV-ZH.pdf">中文履历</a>，<a href="resources/GuosongYangCV.pdf">英文履历</a>，<a href="resources/GuosongYangBio.pdf">英文简介</a></li>
+</ul>
+    
+    <hr class="section">
+	<h3><a name="Research" style="color: black">研究方向</a></h3>
+    <ul class="tight" style="margin-bottom: 12px">
+        <li>切换系统和混合系统（switched and hybrid systems）</li>
+        <li>网络化控制系统（networked control systems）</li>
+        <li>博弈学习（learning in games）</li>
+        <li>网络实体系统（cyber-physical systems, CPS）</li>
+        <li>网络安全（network security）</li>
+    </ul>
+	<div>
+        <a href="publications.html">论文列表</a>
+	</div>
+	<div style=" margin-bottom: 20px">
+	<a href="https://scholar.google.com/citations?user=xYYJOowAAAAJ">Google Scholar 个人主页</a>
+	</div>
+	
+	<hr class="section">
+	<!-- Start of StatCounter Code for Default Guide -->
+	<script type="text/javascript">
+		var sc_project=11148970;
+		var sc_invisible=0;
+		var sc_security="2ae718cc";
+		var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "http://www.");
+		document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+	</script>
+	<noscript><div class="statcounter"><a title="web analytics" href="http://statcounter.com/web-analytics/" target="_blank"><img class="statcounter" src="//c.statcounter.com/11148970/0/2ae718cc/0/" alt="web analytics"></a></div></noscript>
+	<!-- End of StatCounter Code for Default Guide -->
+</body>
+</html>

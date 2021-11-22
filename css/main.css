@@ -141,7 +141,7 @@ ul.nav li.menu a {
 }
 
 a.absToggle {
-    font-size: .875em;
+    font-size: 14px;
     text-decoration: none;
     cursor: pointer;
 }
@@ -155,7 +155,7 @@ a.absToggle:hover {
 }
 
 p.abs {
-    font-size: .875em;
+    font-size: 14px;
     margin: 12px 1em 20px 1em;
     text-align: justify;
 }
@@ -166,7 +166,7 @@ p.abs.more {
 }
 
 div.slides {
-    font-size: .875em;
+    font-size: 14px;
 }
 
 hr.section {
@@ -178,7 +178,12 @@ hr.section {
     margin-left: -2%;
 }
 
+.material-icons-outlined.normal {
+	font-size: 16px;
+    vertical-align: -20%;
+}
+
 .material-icons-outlined.abs {
-	font-size:1em;
-	vertical-align:text-bottom;
+	font-size: 14px;
+	vertical-align: -20%;
 }

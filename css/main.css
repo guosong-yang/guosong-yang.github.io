@@ -22,6 +22,10 @@ body {
     padding: 40px 4%;
 }
 
+nobody{
+	flex: 1;
+}
+
 a {
     color: royalblue;
 	text-decoration: none;

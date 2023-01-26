@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Guosong Yang</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js"],
+			jax: ["input/TeX", "output/HTML-CSS"],
+			tex2jax: {
+				inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+				displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+			},
+			"HTML-CSS": { availableFonts: ["TeX"] }
+		});
+	</script>
+	<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
+</head>
+
+<nav>
+	<ul class="nav" id="navList">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="publications.html">Publications</a></li>
+		<li><a class="current" href="javascript: void(0)">Teaching</a></li>
+		<li class="menu"><a href="javascript: void(0)" onclick="navClick()">☰</a></li>
+        <li class="lang"><a href="hiring.html">Join</a></li>
+	</ul>
+	<script>
+		function navClick() {
+			var x = document.getElementById("navList");
+			if (x.className === "nav") {
+				x.className += " responsive";
+			} else {
+				x.className = "nav";
+			}
+		}
+	</script>
+</nav>
+
+<body style="min-height: 90vh; display: flex; flex-direction: column">
+	<h2 style="margin-bottom: 12px">Teaching</h2>
+	<script>
+		function absShow(id) {
+			var abs = document.getElementById(id);
+			abs.style.display = 'block';
+		}
+		function absHide(id) {
+			var abs = document.getElementById(id);
+			abs.style.display = 'none';
+		}
+		function absShowMore(id) {
+			var abs = document.getElementById(id);
+			abs.style.display = 'inline';
+		}
+	</script>
+	
+	<!-- <hr class="section"> -->
+	<h3>Rutgers University</h3>
+    <ul class="tight">
+        <li>
+            16:332:541 Stochastic Signals and Systems: Fall 2022
+            <div id="ECE541Hide" style="display: block"><a class="absToggle" onclick="absShow('ECE541Show'); absHide('ECE541Hide')">Synopsis<span class="material-icons-outlined abs">expand_more</span></a></div>
+            <div id="ECE541Show" style="display: none"><a class="absToggle" onclick="absHide('ECE541Show'); absShow('ECE541Hide')">Synopsis<span class="material-icons-outlined abs">expand_less</span></a>
+                <p class="abs">Axioms of probability; conditional probability and independence; random variables and functions thereof; mathematical expectation; characteristic functions; conditional expectation; Gaussian random vectors; mean square estimation; convergence of a sequence of random variables; laws of large numbers and central limit theorem; stochastic processes; stationarity, autocorrelation and power spectral density; linear systems with stochastic inputs; linear estimation; independent increment; Markov, Wiener, and Poisson processes.</p>
+            </div>
+        </li>
+        <li>
+            16:332:345 Linear Systems and Signals: Spring 2023
+            <div id="ECE345Hide" style="display: block"><a class="absToggle" onclick="absShow('ECE345Show'); absHide('ECE345Hide')">Synopsis<span class="material-icons-outlined abs">expand_more</span></a></div>
+            <div id="ECE345Show" style="display: none"><a class="absToggle" onclick="absHide('ECE345Show'); absShow('ECE345Hide')">Synopsis<span class="material-icons-outlined abs">expand_less</span></a>
+                <p class="abs">Introduction to continuous- and discrete-time systems and signals, linear time-invariant (LTI) systems, analysis of signals and systems using Laplace and Z-transforms, frequency-domain representations using Fourier transforms, and applications in communications, control, and signal processing.</p>
+            </div>
+        </li>
+    </ul>
+	<nobody></nobody>
+</body>
+
+<footer style="margin-top: auto">
+	<hr class="section">
+		<!-- Start of StatCounter Code for Default Guide -->
+		<script type="text/javascript">
+			var sc_project=11148970;
+			var sc_invisible=0;
+			var sc_security="2ae718cc";
+			var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "http://www.");
+			document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+		</script>
+		<noscript><div class="statcounter"><a title="web analytics" href="http://statcounter.com/web-analytics/" target="_blank"><img class="statcounter" src="//c.statcounter.com/11148970/0/2ae718cc/0/" alt="web analytics"></a></div></noscript>
+		<!-- End of StatCounter Code for Default Guide -->
+</footer>
+</html>

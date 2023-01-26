@@ -25,8 +25,9 @@
 	<ul class="nav" id="navList">
 		<li><a href="index.html">Home</a></li>
 		<li><a class="current" href="javascript: void(0)">Publications</a></li>
+		<li><a href="teaching.html">Teaching</a></li>
 		<li class="menu"><a href="javascript: void(0)" onclick="navClick()">☰</a></li>
-        <li class="lang" style="display: none"><a href="publications-zh.html" style="font-size: 1em">中文</a></li>
+        <li class="lang"><a href="hiring.html">Join</a></li>
 	</ul>
 	<script>
 		function navClick() {
@@ -41,7 +42,7 @@
 </nav>
 
 <body>
-	<h2 style="margin-bottom: 12px"><a href="https://guosong-yang.github.io/">Guosong Yang</a>'s publications and preprints</h2>
+	<h2 style="margin-bottom: 12px">Publications and preprints</h2>
 	<script>
 		function absShow(id) {
 			var abs = document.getElementById(id);
@@ -59,23 +60,13 @@
 	
 	<hr class="section">
 	<h3>Working papers</h3>
-    <ul class='loose' style="list-style-type: none; padding-left: 0">
+    <ul class="tight" style="list-style-type: none; padding-left: 0">
         <li>
             <a href="resources/CYH-2022.pdf">"Newton and interior-point methods for
 (constrained) nonconvex-nonconcave minmax optimization with stability guarantees"</a> (with R. Chinchilla and J. P. Hespanha), submitted for journal publication
             <div id="absCYH2022Hide" style="display: block"><a class="absToggle" onclick="absShow('absCYH2022Show'); absHide('absCYH2022Hide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>
             <div id="absCYH2022Show" style="display: none"><a class="absToggle" onclick="absHide('absCYH2022Show'); absShow('absCYH2022Hide')">Abstrac<span class="material-icons-outlined abs">expand_less</span></a>
                 <p class="abs">We address the problem of finding a local solution to a nonconvex-nonconcave minmax optimization using Newton-type methods, including interior-point ones. We modify the Hessian matrix of these methods such that, at each step, the modified Newton update direction can be seen as the solution to a quadratic program that locally approximates the minmax problem. Moreover, we show that by selecting the modification in an appropriate way, the only stable points of the algorithm's iterations are local minmax points. Using numerical examples, we show that the computation time of our algorithm scales roughly linearly with the number of nonzero elements in the Hessian. For minmax control problems with per-stage costs, this generally leads to computation times that scale linearly with the horizon length.</p>
-            </div>
-        </li>
-        <li>
-            <a href="resources/YLH-2023.pdf">"Topological entropy of switched nonlinear and interconnected systems"</a> (with D. Liberzon and J. P. Hespanha), submitted for journal publication
-            <div id="absYLH2023Hide" style="display: block; margin-bottom: 0"><a class="absToggle" onclick="absShow('absYLH2023Show'); absHide('absYLH2023Hide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>
-            <div id="absYLH2023Show" style="display: none"><a class="absToggle" onclick="absHide('absYLH2023Show'); absShow('absYLH2023Hide')">Abstrac<span class="material-icons-outlined abs">expand_less</span></a>
-                <p class="abs">A general upper bound for topological entropy of switched nonlinear systems is constructed, using an asymptotic average of upper limits of the matrix measures of Jacobian matrices of strongly persistent indi- vidual modes, weighted by their active rates. A general lower bound is constructed as well, using a similar weighted average of lower lim- its of the traces of these Jacobian matrices. In a case of interconnected structure, the general upper bound is readily applied to derive upper bounds for entropy that depend only on “network-level” information. In a case of block-diagonal structure, less conservative upper and lower bounds for entropy are constructed. In each case, upper bounds for entropy that require less information about the switching signal are also derived. The upper bounds for entropy and their relations are illustrated by numerical examples of a switched Lotka–Volterra ecosystem model.</p>
-            </div>
-            <div class="slides">See
-            	<a href="resources/YLH-2023-Report.pdf">the technical report</a> of this work
             </div>
         </li>
         <li>
@@ -90,6 +81,16 @@
 	<hr class="section">
 	<h3>Journals</h3>
     <ul class='loose' style="list-style-type: none; padding-left: 0">
+        <li>
+            <a href="resources/YLH-MCSS.pdf">"Topological entropy of switched nonlinear and interconnected systems"</a> (with D. Liberzon and J. P. Hespanha), <i>Mathematics of Control, Signals, and Systems</i>, to be published
+            <div id="absYLHMCSSHide" style="display: block; margin-bottom: 0"><a class="absToggle" onclick="absShow('absYLHMCSSShow'); absHide('absYLHMCSSHide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>
+            <div id="absYLHMCSSShow" style="display: none"><a class="absToggle" onclick="absHide('absYLHMCSSShow'); absShow('absYLHMCSSHide')">Abstrac<span class="material-icons-outlined abs">expand_less</span></a>
+                <p class="abs">A general upper bound for topological entropy of switched nonlinear systems is constructed, using an asymptotic average of upper limits of the matrix measures of Jacobian matrices of strongly persistent individual modes, weighted by their active rates. A general lower bound is constructed as well, using a similar weighted average of lower limits of the traces of these Jacobian matrices. In a case of interconnected structure, the general upper bound is readily applied to derive upper bounds for entropy that depend only on “network-level” information. In a case of block-diagonal structure, less conservative upper and lower bounds for entropy are constructed. In each case, upper bounds for entropy that require less information about the switching signal are also derived. The upper bounds for entropy and their relations are illustrated by numerical examples of a switched Lotka&ndash;Volterra ecosystem model.</p>
+            </div>
+            <div class="slides">See
+            	<a href="resources/YLH-MCSS-Report.pdf">the technical report</a> of this work
+            </div>
+        </li>
         <li>
             <a href="resources/HCCEY-ARC2021.pdf">"Forecasting COVID-19 cases based on a parameter-varying stochastic SIR model"</a> (with J. P. Hespanha, R. Chinchilla, R. R. Costa, and M. K. Erdal), <i>Annual Reviews in Control</i>, vol. 51, pp. 460&ndash;476, Apr. 2021
             <div id="absHCCEYARC2021Hide" style="display: block"><a class="absToggle" onclick="absShow('absHCCEYARC2021Show'); absHide('absHCCEYARC2021Hide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>
@@ -326,7 +327,9 @@ Model identification and optimal vaccination for COVID-19"</a> (with R. Chinchil
 
     <hr class="section" style="display: none">
     <h3 style="display: none">Technical reports</h3>
-	
+</body>
+
+<foot>
 	<hr class="section">
 	<div style="font-size: .75em"><strong>Disclaimer:</strong> The above material is presented to facilitate exact citations, online searches, and timely dissemination of scholarly and technical work. Copyright and all rights therein are retained by original copyright holders.</div>
     <!-- Start of StatCounter Code for Default Guide -->
@@ -339,5 +342,5 @@ Model identification and optimal vaccination for COVID-19"</a> (with R. Chinchil
     </script>
     <noscript><div class="statcounter"><a title="web analytics" href="http://statcounter.com/web-analytics/" target="_blank"><img class="statcounter" src="//c.statcounter.com/11148970/0/2ae718cc/0/" alt="web analytics"></a></div></noscript>
     <!-- End of StatCounter Code for Default Guide -->
-</body>
+</foot>
 </html>

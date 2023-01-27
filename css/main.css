@@ -112,11 +112,11 @@ ul.nav li.menu {
 }
 
 ul.nav li.menu a {
-    font-size: 1.01em;
+    font-size: 1.02em;
 }
 
 @media screen and (max-width:680px) {
-    ul.nav li:not(.current) {
+    ul.nav li:not(:first-child) {
         display: none;
     }
     ul.nav li.menu {

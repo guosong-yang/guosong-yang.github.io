@@ -116,7 +116,7 @@ ul.nav li.menu a {
 }
 
 @media screen and (max-width:680px) {
-    ul.nav li:not(: first-child) {
+    ul.nav li:not(:first-child) {
         display: none;
     }
     ul.nav li.menu {

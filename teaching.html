@@ -25,20 +25,10 @@
 	<ul class="nav" id="navList">
 		<li><a href="index.html">Home</a></li>
 		<li><a href="publications.html">Publications</a></li>
-		<li><a class="current" href="javascript: void(0)">Teaching</a></li>
+		<li class="current"><a href="javascript: void(0)">Teaching</a></li>
+        <li><a href="hiring.html">Join</a></li>
 		<li class="menu"><a href="javascript: void(0)" onclick="navClick()">☰</a></li>
-        <li class="lang"><a href="hiring.html">Join</a></li>
 	</ul>
-	<script>
-		function navClick() {
-			var x = document.getElementById("navList");
-			if (x.className === "nav") {
-				x.className += " responsive";
-			} else {
-				x.className = "nav";
-			}
-		}
-	</script>
 </nav>
 
 <body style="min-height: 90vh; display: flex; flex-direction: column">

@@ -23,23 +23,13 @@
 
 <nav>
 	<ul class="nav" id="navList">
-		<li><a class="current" href="javascript: void(0)">Home</a></li>
+		<li class="current"><a href="javascript: void(0)">Home</a></li>
 		<li><a href="publications.html">Publications</a></li>
         <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="hiring.html">Join</a></li>
         <li class="menu"><a href="javascript: void(0)" onclick="navClick()">☰</a></li>
-        <li class="lang"><a href="hiring.html">Join</a></li>
         <!-- <li class="lang"><a href="zh.html" style="font-size: 1em">中文</a></li> -->
 	</ul>
-	<script>
-		function navClick() {
-			var x = document.getElementById("navList");
-			if (x.className === "nav") {
-				x.className += " responsive";
-			} else {
-				x.className = "nav";
-			}
-		}
-	</script>
 </nav>
 
 <body>

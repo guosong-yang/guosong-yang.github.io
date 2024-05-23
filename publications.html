@@ -26,7 +26,7 @@
 		<li><a href="index.html">Home</a></li>
 		<li class="current"><a href="javascript: void(0)">Publications</a></li>
 		<li><a href="teaching.html">Teaching</a></li>
-        <li><a href="recruiting.html">Join</a></li>
+<!--         <li><a href="recruiting.html">Join</a></li> -->
 		<li class="menu"><a href="javascript: void(0)" onclick="navClick()">☰</a></li>
 	</ul>
 </nav>
@@ -50,20 +50,13 @@
 	
 	<hr class="section">
 	<h3>Working papers</h3>
+<!-- 	1 -->
     <ul class="loose" style="list-style-type: none; padding-left: 0">
-        <li>
-            <a href="resources/CYH-2022.pdf">"Newton and interior-point methods for
-(constrained) nonconvex-nonconcave minmax optimization with stability guarantees"</a> (with R. Chinchilla and J. P. Hespanha), submitted for journal publication
-            <div id="absCYH2022Hide" style="display: block"><a class="absToggle" onclick="absShow('absCYH2022Show'); absHide('absCYH2022Hide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>
-            <div id="absCYH2022Show" style="display: none"><a class="absToggle" onclick="absHide('absCYH2022Show'); absShow('absCYH2022Hide')">Abstrac<span class="material-icons-outlined abs">expand_less</span></a>
-                <p class="abs">We address the problem of finding a local solution to a nonconvex-nonconcave minmax optimization using Newton-type methods, including interior-point ones. We modify the Hessian matrix of these methods such that, at each step, the modified Newton update direction can be seen as the solution to a quadratic program that locally approximates the minmax problem. Moreover, we show that by selecting the modification in an appropriate way, the only stable points of the algorithm's iterations are local minmax points. Using numerical examples, we show that the computation time of our algorithm scales roughly linearly with the number of nonzero elements in the Hessian. For minmax control problems with per-stage costs, this generally leads to computation times that scale linearly with the horizon length.</p>
-            </div>
-        </li>
         <li>
             <a href="resources/YPH-2021.pdf">"Adaptive learning in two-player Stackelberg games with application to network security"</a> (with R. Poovendran and J. P. Hespanha), submitted for journal publication
             <div id="absYPH2021Hide" style="display: block"><a class="absToggle" onclick="absShow('absYPH2021Show'); absHide('absYPH2021Hide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>
             <div id="absYPH2021Show" style="display: none"><a class="absToggle" onclick="absHide('absYPH2021Show'); absShow('absYPH2021Hide')">Abstrac<span class="material-icons-outlined abs">expand_less</span></a>
-                <p class="abs">An adaptive learning approach is proposed for solving two-player Stackelberg games with incomplete information. Specifically, the follower’s cost is unknown to the leader, who knows only that the follower’s response to its own action belongs to some parametric family of functions, but not the actual parameter value. The proposed approach is capable of simultaneously estimating the unknown parameter and optimizing the leader’s action. It ensures that the estimated follower’s action and leader’s cost become indistinguishable from their actual values in finite time, up to a preselected, arbitrarily small error bound; moreover, the first-order necessary condition for optimality holds asymptotically in time for the estimated leader’s cost. Under a persistent excitation condition, the parameter estimation error can be bounded by a preselected, arbitrarily small constant in finite time as well. When the parametric function known to the leader does not match the follower’s response function perfectly, the same convergence results can be ensured for preselected error bounds proportional to the size of the mismatch. The approach and convergence results are also extended to the case where the follower’s actions cannot be observed, and are illustrated by simulation examples in the domain of network security.</p>
+                <p class="abs">An adaptive learning approach is proposed for solving two-player Stackelberg games with incomplete information. Specifically, the follower's cost is unknown to the leader, who knows only that the follower's response to its own action belongs to some parametric family of functions, but not the actual parameter value. The proposed approach is capable of simultaneously estimating the unknown parameter and optimizing the leader's action. It ensures that the estimated follower's action and leader's cost become indistinguishable from their actual values in finite time, up to a preselected, arbitrarily small error bound; moreover, the first-order necessary condition for optimality holds asymptotically in time for the estimated leader's cost. Under a persistent excitation condition, the parameter estimation error can be bounded by a preselected, arbitrarily small constant in finite time as well. When the parametric function known to the leader does not match the follower's response function perfectly, the same convergence results can be ensured for preselected error bounds proportional to the size of the mismatch. The approach and convergence results are also extended to the case where the follower's actions cannot be observed, and are illustrated by simulation examples in the domain of network security.</p>
             </div>
         </li>
     </ul>
@@ -71,16 +64,26 @@
 	<hr class="section">
 	<h3>Journals</h3>
     <ul class="loose" style="list-style-type: none; padding-left: 0">
+<!--     	8 -->
+        <li>
+            <a href="resources/CYH-MCSS2023.pdf">"Newton and interior-point methods for (constrained) nonconvex-nonconcave minmax optimization with stability guarantees"</a> (with R. Chinchilla and J. P. Hespanha), <i>Mathematics of Control, Signals, and Systems</i>, Oct. 2023
+            <div id="absCYHMCSS2023Hide" style="display: block"><a class="absToggle" onclick="absShow('absCYHMCSS2023Show'); absHide('absCYHMCSS2023Hide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>
+            <div id="absCYHMCSS2023Show" style="display: none"><a class="absToggle" onclick="absHide('absCYHMCSS2023Show'); absShow('absCYHMCSS2023Hide')">Abstrac<span class="material-icons-outlined abs">expand_less</span></a>
+                <p class="abs">We address the problem of finding a local solution to a nonconvex-nonconcave minmax optimization using Newton type methods, including primal-dual interior-point ones. The first step in our approach is to analyze the local convergence properties of Newton's method in nonconvex minimization. It is well established that Newton's method iterations are attracted to any point with a zero gradient, irrespective of it being a local minimum. From a dynamical system standpoint, this occurs because every point for which the gradient is zero is a locally asymptotically stable equilibrium point. We show that by adding a multiple of the identity such that the Hessian matrix is always positive definite, we can ensure that every non-local-minimum equilibrium point becomes unstable (meaning that the iterations are no longer attracted to such points), while local minima remain locally asymptotically stable. Building on this foundation, we develop Newton-type algorithms for minmax optimization, conceptualized as a sequence of local quadratic approximations for the minmax problem. Using a local quadratic approximation serves as a surrogate for guiding the modified Newton's method toward a solution. For these local quadratic approximations to be well-defined, it is necessary to modify the Hessian matrix by adding a diagonal matrix. We demonstrate that, for an appropriate choice of this diagonal matrix, we can guarantee the instability of every non-local-minmax equilibrium point while maintaining stability for local minmax points. Using numerical examples, we illustrate the importance of guaranteeing the instability property. While our results are about local convergence, the numerical examples also indicate that our algorithm enjoys good global convergence properties.</p>
+            </div>
+        </li>
+<!--         7 -->
         <li>
             <a href="resources/YLH-MCSS2023.pdf">"Topological entropy of switched nonlinear and interconnected systems"</a> (with D. Liberzon and J. P. Hespanha), <i>Mathematics of Control, Signals, and Systems</i>, vol. 35, no. 3, pp. 641&ndash;683, Sep. 2023
             <div id="absYLHMCSS2023Hide" style="display: block; margin-bottom: 0"><a class="absToggle" onclick="absShow('absYLHMCSS2023Show'); absHide('absYLHMCSS2023Hide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>
             <div id="absYLHMCSS2023Show" style="display: none"><a class="absToggle" onclick="absHide('absYLHMCSS2023Show'); absShow('absYLHMCSS2023Hide')">Abstrac<span class="material-icons-outlined abs">expand_less</span></a>
-                <p class="abs">A general upper bound for topological entropy of switched nonlinear systems is constructed, using an asymptotic average of upper limits of the matrix measures of Jacobian matrices of strongly persistent individual modes, weighted by their active rates. A general lower bound is constructed as well, using a similar weighted average of lower limits of the traces of these Jacobian matrices. In a case of interconnected structure, the general upper bound is readily applied to derive upper bounds for entropy that depend only on “network-level” information. In a case of block-diagonal structure, less conservative upper and lower bounds for entropy are constructed. In each case, upper bounds for entropy that require less information about the switching signal are also derived. The upper bounds for entropy and their relations are illustrated by numerical examples of a switched Lotka&ndash;Volterra ecosystem model.</p>
+                <p class="abs">A general upper bound for topological entropy of switched nonlinear systems is constructed, using an asymptotic average of upper limits of the matrix measures of Jacobian matrices of strongly persistent individual modes, weighted by their active rates. A general lower bound is constructed as well, using a similar weighted average of lower limits of the traces of these Jacobian matrices. In a case of interconnected structure, the general upper bound is readily applied to derive upper bounds for entropy that depend only on "network-level" information. In a case of block-diagonal structure, less conservative upper and lower bounds for entropy are constructed. In each case, upper bounds for entropy that require less information about the switching signal are also derived. The upper bounds for entropy and their relations are illustrated by numerical examples of a switched Lotka&ndash;Volterra ecosystem model.</p>
             </div>
             <div class="slides">See
             	<a href="resources/YLH-MCSS2023-Report.pdf">the technical report</a> of this work
             </div>
         </li>
+<!--         6 -->
         <li>
             <a href="resources/HCCEY-ARC2021.pdf">"Forecasting COVID-19 cases based on a parameter-varying stochastic SIR model"</a> (with J. P. Hespanha, R. Chinchilla, R. R. Costa, and M. K. Erdal), <i>Annual Reviews in Control</i>, vol. 51, pp. 460&ndash;476, Apr. 2021
             <div id="absHCCEYARC2021Hide" style="display: block"><a class="absToggle" onclick="absShow('absHCCEYARC2021Show'); absHide('absHCCEYARC2021Hide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>
@@ -88,6 +91,7 @@
                 <p class="abs">We address the prediction of the number of new cases and deaths for the coronavirus disease 2019 (COVID-19) over a future horizon from historical data (forecasting). We use a model-based approach based on a stochastic Susceptible-Infections-Removed (SIR) model with time-varying parameters, which capture the evolution of the disease dynamics in response to changes in social behavior, non-pharmaceutical interventions, and testing rates. We show that, in the presence of asymptomatic cases, such model includes internal parameters and states that cannot be uniquely identified solely on the basis of measurements of new cases and deaths, but this does not preclude the construction of reliable forecasts for future values of these measurements. Such forecasts and associated confidence intervals can be computed using an iterative algorithm based on nonlinear optimization solvers, without the need for Monte Carlo sampling. Our results have been validated on an extensive COVID-19 dataset covering the period from March through December 2020 on 144 regions around the globe.</p>
             </div>
         </li>
+<!--         5 -->
         <li>
             <a href="resources/YSLH-MCSS2020.pdf">"Topological entropy of switched linear systems: General matrices and matrices with commutation relations"</a> (with A. J. Schmidt, D. Liberzon, and J. P. Hespanha), <i>Mathematics of Control, Signals, and Systems</i>, vol. 32, no. 3, pp. 411&ndash;453, Sep. 2020
             <div id="absYSLHMCSS2020Hide" style="display: block"><a class="absToggle" onclick="absShow('absYSLHMCSS2020Show'); absHide('absYSLHMCSS2020Hide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>
@@ -95,6 +99,7 @@
                 <p class="abs">This paper studies a notion of topological entropy for switched systems, formulated in terms of the minimal number of trajectories needed to approximate all trajectories with a finite precision. For general switched linear systems, we prove that the topological entropy is independent of the set of initial states. We construct an upper bound for the topological entropy in terms of an average of the measures of system matrices of individual modes, weighted by their corresponding active times, and a lower bound in terms of an active-time-weighted average of their traces. For switched linear systems with scalar-valued state and those with pairwise commuting matrices, we establish formulae for the topological entropy in terms of active-time-weighted averages of the eigenvalues of system matrices of individual modes. For the more general case with simultaneously triangularizable matrices, we construct upper bounds for the topological entropy that only depend on the eigenvalues, their order in a simultaneous triangularization, and the active times. In each case above, we also establish upper bounds that are more conservative but require less information on the system matrices or on the switching, with their relations illustrated by numerical examples. Stability conditions inspired by the upper bounds for the topological entropy are presented as well.</p>
             </div>
         </li>
+<!--         4 -->
         <li>
             <a href="resources/YL-TAC2018.pdf">"Feedback stabilization of switched linear systems with unknown disturbances under data-rate constraints"</a> (with D. Liberzon), <i>IEEE Transactions on Automatic Control</i>, vol. 63, no. 7, pp. 2107&ndash;2122, Jul. 2018
             <div id="absYLTAC2018Hide" style="display: block"><a class="absToggle" onclick="absShow('absYLTAC2018Show'); absHide('absYLTAC2018Hide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>
@@ -102,6 +107,7 @@
                 <p class="abs">We study the problem of stabilizing a switched linear system with a completely unknown disturbance using sampled and quantized state feedback. The switching is assumed to be slow enough in the sense of combined dwell-time and average dwell-time, each individual mode is assumed to be stabilizable, and the data rate is assumed to be large enough but finite. By extending the approach of reachable-set approximation and propagation from an earlier result on the disturbance-free case, we develop a communication and control strategy that achieves a variant of input-to-state stability with exponential decay. An estimate of the disturbance bound is introduced to counteract the unknown disturbance, and a novel algorithm is designed to adjust the estimate and recover the state when it escapes the range of quantization.</p>
             </div>
         </li>
+<!--         3 -->
         <li>
             <a href="resources/OWYH-TAC2018.pdf">"Stabilization of networked control systems under clock offsets and quantization"</a> (with K. Okano, M. Wakaiki, and J. P. Hespanha), <i>IEEE Transactions on Automatic Control</i>, vol. 63, no. 6, pp. 1708&ndash;1723, Jun. 2018
             <div id="absOWYHTAC2018Hide" style="display: block"><a class="absToggle" onclick="absShow('absOWYHTAC2018Show'); absHide('absOWYHTAC2018Hide')">Abstract<span class="material-icons-outlined abs">expand_more</span></div>
@@ -109,6 +115,7 @@
                 <p class="abs">This paper studies the impact of clock mismatches and quantization on networked control systems. We consider a scenario where the plant's state is measured by a sensor that communicates with the controller through a network. Variable communication delays and clock jitter do not permit a perfect synchronization between the clocks of the sensor and controller. We investigate limitations on the clock offset tolerable for stabilization of the feedback system. For a process with a scalar-valued state, we show that there exists a tight bound on the offset above which the closed-loop system cannot be stabilized with any causal controllers. For higher dimensional plants, if the plant has two distinct poles, then the effect of clock mismatches can be canceled with a finite number of measurements, and hence there is no fundamental limitation. We also consider the case where the measurements are subject to quantization in addition to clock mismatches. For first-order plants, we present necessary conditions and sufficient conditions for stabilizability, which show that a larger clock offset requires a finer quantization.</p>
             </div>
         </li>
+<!--         2 -->
         <li>
             <a href="resources/MYL-Automatica2018.pdf">"Lyapunov small-gain theorems for networks of not necessarily ISS hybrid systems"</a> (with A. Mironchenko and D. Liberzon), <i>Automatica</i>, vol. 88, pp. 10&ndash;20, Feb. 2018
             <div id="absMYLAutomatica2018Hide" style="display: block"><a class="absToggle" onclick="absShow('absMYLAutomatica2018Show'); absHide('absMYLAutomatica2018Hide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>
@@ -116,6 +123,7 @@
                 <p class="abs">We prove a novel Lyapunov-based small-gain theorem for networks composed of n &ge; 2 hybrid subsystems which are not necessarily input-to-state stable. This result unifies and extends several small-gain theorems for hybrid and impulsive systems proposed in the last few years. We also show how average dwell-time (ADT) clocks and reverse ADT clocks can be used to modify the ISS Lyapunov functions for subsystems and to enlarge the applicability of the derived small-gain theorems.</p>
             </div>
         </li>
+<!--         1 -->
         <li>
             <a href="resources/YL-SCL2015.pdf">"A Lyapunov-based small-gain theorem for interconnected switched systems"</a> (with D. Liberzon), <i>Systems &amp; Control Letters</i>, vol. 78, pp. 47&ndash;54, Apr. 2015
             <div id="absYLSCL2015Hide" style="display: block"><a class="absToggle" onclick="absShow('absYLSCL2015Show'); absHide('absYLSCL2015Hide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>
@@ -128,6 +136,7 @@
 	<hr class="section">
     <h3>Book chapter</h3>
     <ul class="loose" style="list-style-type: none; padding-left: 0">
+<!-- 	    1 -->
         <li>
             <a href="resources/YH-BookChapter2021.pdf">"Modeling and mitigating link-flooding distributed denial-of-service attacks via learning in Stackelberg games"</a> (with J. P. Hespanha), in <a href="https://www.springer.com/us/book/9783030609894" target="_blank" rel="noopener noreferrer"><i>Handbook of Reinforcement Learning and Control</i>&nbsp;<span class="material-icons-outlined normal">open_in_new</span></a>, K. G. Vamvoudakis, Y. Wan, F. L. Lewis, and D. Cansever, Eds. &emsp; Springer, 2021, pp. 433&ndash;463
             <div id="absYHBookChapter2021Hide" style="display: block; margin-bottom: 0"><a class="absToggle" onclick="absShow('absYHBookChapter2021Show'); absHide('absYHBookChapter2021Hide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>
@@ -140,13 +149,23 @@
     <hr class="section">
     <h3>Conferences</h3>
     <ul class="loose" style="list-style-type: none; padding-left: 0">
+<!--     	15 -->
         <li>
-            <a href="resources/SYH-CDC2022.pdf">"State estimation for asynchronously switched sampled-data systems"</a> (with S. C. Shankar and J. P. Hespanha), to be published in <i>Proc. 61st IEEE Conference on Decision and Control (CDC 2022)</i>
+            <a href="resources/VFHCYLSP-ACC2023.pdf">"Game theory for autonomy: From min-max optimization to equilibrium and bounded rationality learning"</a> (with K. G. Vamvoudakis, F. Fotiadis, J. P. Hespanha, R. Chinchilla, M. Liu, J. S. Shamma, and L. Pavel), in <i>Proc. 2023 American Control Conference (ACC 2023)</i>, 2023, pp. 4363&ndash;4380
+            <div id="absVFHCYLSPACC2023Hide"" style="display: block; margin-bottom: 0"><a class="absToggle" onclick="absShow('absVFHCYLSPACC2023Show'); absHide('absVFHCYLSPACC2023Hide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>
+            <div id="absVFHCYLSPACC2023Show" style="display: none"><a class="absToggle" onclick="absHide('absVFHCYLSPACC2023Show'); absShow('absVFHCYLSPACC2023Hide')">Abstract<span class="material-icons-outlined abs">expand_less</span></a>
+                <p class="abs">Finding Nash equilibria in non-cooperative games can be, in general, an exceptionally challenging task. This is owed to various factors, including but not limited to the cost functions of the game being nonconvex/nonconcave, the players of the game having limited information about one another, or even due to issues of computational complexity. The present tutorial draws motivation from this harsh reality and provides methods to approximate Nash or min-max equilibria in non-ideal settings using both optimization- and learning-based techniques. The tutorial acknowledges, however, that such techniques may not always converge, but instead lead to oscillations or even chaos. In that respect, tools from passivity and dissipativity theory are provided, which can offer explanations about these divergent behaviors. Finally, the tutorial highlights that, more frequently than often thought, the search for equilibrium policies is simply vain; instead, bounded rationality and non-equilibrium policies can be more realistic to employ owing to some players' learning imperfectly or being relatively naive &ndash; "bounded rational." The efficacy of such plays is demonstrated in the context of autonomous driving systems, where it is explicitly shown that they can guarantee vehicle safety.</p>
+            </div>
+        </li>
+<!--         14 -->
+        <li>
+            <a href="resources/SYH-CDC2022.pdf">"State estimation for asynchronously switched sampled-data systems"</a> (with S. C. Shankar and J. P. Hespanha), in <i>Proc. 61st IEEE Conference on Decision and Control (CDC 2022)</i>, 2022, pp. 1&ndash;7
             <div id="absSYHCDC2022Hide" style="display: block; margin-bottom: 0"><a class="absToggle" onclick="absShow('absSYHCDC2022Show'); absHide('absSYHCDC2022Hide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>
             <div id="absSYHCDC2022Show" style="display: none"><a class="absToggle" onclick="absHide('absSYHCDC2022Show'); absShow('absSYHCDC2022Hide')">Abstract<span class="material-icons-outlined abs">expand_less</span></a>
                 <p class="abs">Asynchronously switched sampled-data systems can help model power systems and vehicles that evolve in continuous-time with switching behavior and discrete time measurements. We address the problem of jointly estimating a switching signal, with uncertainty in the exact switching times, as well as the continuous states of the system. We prove stability of the standard Kalman filter under uncertainty in the switching time, with statistical bounds relating to the sampling period. We then propose a method for estimation of switching times as well as a method for efficient joint estimation of the state and switching signal inspired by the interacting multiple-model extended-Viterbi algorithm. We validate our algorithms in simulation for a power converter and maneuvering vehicle.</p>
             </div>
         </li>
+<!--         13 -->
         <li>
             <a href="resources/CYECH-CDC2021.pdf">"A tale of two doses:
 Model identification and optimal vaccination for COVID-19"</a> (with R. Chinchilla, M. K. Erdal, R. R. Costa, and J. P. Hespanha), in <i>Proc. 60th IEEE Conference on Decision and Control (CDC 2021)</i>, 2021, pp. 3544&ndash;3550 (invited paper)
@@ -159,8 +178,9 @@ Model identification and optimal vaccination for COVID-19"</a> (with R. Chinchil
             	of the talk
             </div>
         </li>
+<!--         12 -->
         <li>
-            <a href="resources/YLH-HSCC2021.pdf">"Topological entropy of switched nonlinear systems"</a> (with D. Liberzon and J. P. Hespanha), in <i>Proc. 24th ACM International Conference on Hybrid Systems: Computation and Control (HSCC 2021)</i>, 2021, 11 pages
+            <a href="resources/YLH-HSCC2021.pdf">"Topological entropy of switched nonlinear systems"</a> (with D. Liberzon and J. P. Hespanha), in <i>Proc. 24th ACM International Conference on Hybrid Systems: Computation and Control (HSCC 2021)</i>, 2021, pp. 1&ndash;11
             <div id="absYHLHSCC2021Hide" style="display: block; margin-bottom: 0"><a class="absToggle" onclick="absShow('absYHLHSCC2021Show'); absHide('absYHLHSCC2021Hide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>
             <div id="absYHLHSCC2021Show" style="display: none"><a class="absToggle" onclick="absHide('absYHLHSCC2021Show'); absShow('absYHLHSCC2021Hide')">Abstract<span class="material-icons-outlined abs">expand_less</span></a>
                 <p class="abs">This paper studies topological entropy of switched nonlinear systems. We construct a general upper bound for the topological entropy in terms of an average of the asymptotic suprema of the measures of Jacobian matrices of individual modes, weighted by the corresponding active rates. A general lower bound is also established in terms of an active-rate-weighted average of the asymptotic infima of the traces of these Jacobian matrices. For switched systems with diagonal modes, we establish upper and lower bounds that only depend on the eigenvalues of Jacobian matrices, their relative order among individual modes, and the active rates. For both cases, we also establish upper bounds that are more conservative but require less information on the switching, with their relations illustrated by numerical examples of a switched Lotka–Volterra ecosystem model.</p>
@@ -172,17 +192,19 @@ Model identification and optimal vaccination for COVID-19"</a> (with R. Chinchil
             	of the talk
             </div>
         </li>
+<!--         11 -->
         <li>
             <a href="resources/YPH-CDC2019.pdf">"Adaptive learning in two-player Stackelberg games with continuous action sets"</a> (with R. Poovendran and J. P. Hespanha), in <i>Proc. 58th IEEE Conference on Decision and Control (CDC 2019)</i>, 2019, pp. 6905&ndash;6911
             <div id="absYPHCDC2019Hide" style="display: block; margin-bottom: 0"><a class="absToggle" onclick="absShow('absYPHCDC2019Show'); absHide('absYPHCDC2019Hide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>
             <div id="absYPHCDC2019Show" style="display: none"><a class="absToggle" onclick="absHide('absYPHCDC2019Show'); absShow('absYPHCDC2019Hide')">Abstract<span class="material-icons-outlined abs">expand_less</span></a>
-                <p class="abs">We study a two-player Stackelberg game in which the follower’s strategy depends on a parameter vector that is unknown to the leader. An adaptive learning algorithm is designed to simultaneously estimate the unknown parameter and minimize the leader’s cost, based on adaptive control techniques and hysteresis switching. The algorithm guarantees that the leader’s cost predicted using the parameter estimate becomes indistinguishable from its actual cost in finite time, up to a preselected, arbitrarily small error threshold, and that the first-order necessary condition for optimality holds asymptotically for the predicted cost. If an additional persistent excitation condition holds, then the parameter estimation error can also be bounded by a preselected, arbitrarily small threshold in finite time. The algorithm and convergence results are illustrated via a simple simulation example in the domain of network security.</p>
+                <p class="abs">We study a two-player Stackelberg game in which the follower's strategy depends on a parameter vector that is unknown to the leader. An adaptive learning algorithm is designed to simultaneously estimate the unknown parameter and minimize the leader's cost, based on adaptive control techniques and hysteresis switching. The algorithm guarantees that the leader's cost predicted using the parameter estimate becomes indistinguishable from its actual cost in finite time, up to a preselected, arbitrarily small error threshold, and that the first-order necessary condition for optimality holds asymptotically for the predicted cost. If an additional persistent excitation condition holds, then the parameter estimation error can also be bounded by a preselected, arbitrarily small threshold in finite time. The algorithm and convergence results are illustrated via a simple simulation example in the domain of network security.</p>
             </div>
             <div class="slides">See
             	<a href="resources/YPH-CDC2019-Slides.ppsx">the slides<span class="material-icons-outlined abs">file_download</span></a>
             	of the talk
             </div>
         </li>
+<!--         10 -->
         <li>
             <a href="resources/YHL-HSCC2019.pdf">"On topological entropy and stability of switched linear systems"</a> (with J. P. Hespanha and D. Liberzon), in <i>Proc. 22nd ACM International Conference on Hybrid Systems: Computation and Control (HSCC 2019)</i>, 2019, pp. 119&ndash;127 (<strong>Best Paper Award winner</strong>)
             <div id="absYHLHSCC2019Hide" style="display: block; margin-bottom: 0"><a class="absToggle" onclick="absShow('absYHLHSCC2019Show'); absHide('absYHLHSCC2019Hide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>
@@ -194,6 +216,7 @@ Model identification and optimal vaccination for COVID-19"</a> (with R. Chinchil
             	of the talk
             </div>
         </li>
+<!--         9 -->
         <li>
             <a href="resources/YH-Allerton2018.pdf">"On topological entropy of switched linear systems with pairwise commuting matrices"</a> (with J. P. Hespanha), in <i>Proc. 56th Annual Allerton Conference on Communication, Control, and Computing (Allerton 2018)</i>, 2018, pp. 429&ndash;436 (invited paper)
             <div id="absYHAllerton2018Hide" style="display: block; margin-bottom: 0"><a class="absToggle" onclick="absShow('absYHAllerton2018Show'); absHide('absYHAllerton2018Hide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>
@@ -205,6 +228,7 @@ Model identification and optimal vaccination for COVID-19"</a> (with R. Chinchil
             	of the talk
             </div>
         </li>
+<!--         8 -->
         <li>
             <a href="resources/YSL-CDC2018.pdf">"On topological entropy of switched linear systems with diagonal, triangular, and general matrices"</a> (with A. J. Schmidt and D. Liberzon), in <i>Proc. 57th IEEE Conference on Decision and Control (CDC 2018)</i>, 2018, pp. 5682&ndash;5687
             <div id="absYSLCDC2018Hide" style="display: block; margin-bottom: 0"><a class="absToggle" onclick="absShow('absYSLCDC2018Show'); absHide('absYSLCDC2018Hide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>
@@ -216,6 +240,7 @@ Model identification and optimal vaccination for COVID-19"</a> (with R. Chinchil
             	of the talk
             </div>
         </li>
+<!--     	7 -->
         <li>
             <a href="resources/YHSCHP-ACC2018.pdf">"Modeling and mitigating the Coremelt attack"</a> (with H. Hosseini, D. Sahabandu, A. Clark, J. P. Hespanha, and R. Poovendran), in <i>Proc. 2018 American Control Conference (ACC 2018)</i>, 2018, pp. 3410&ndash;3416
             <div id="absYHSCHPACC2018Hide" style="display: block; margin-bottom: 0"><a class="absToggle" onclick="absShow('absYHSCHPACC2018Show'); absHide('absYHSCHPACC2018Hide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>
@@ -227,6 +252,7 @@ Model identification and optimal vaccination for COVID-19"</a> (with R. Chinchil
             	of the talk
             </div>
         </li>
+<!--         6 -->
         <li>
             <a href="resources/YLJ-ACC2017.pdf">"Stabilization of interconnected switched control-affine systems via a Lyapunov-based small-gain approach"</a> (with D. Liberzon and Z.-P. Jiang), in <i>Proc. 2017 American Control Conference (ACC 2017)</i>, 2017, pp. 5182&ndash;5187
             <div id="absYLJACC2017Hide" style="display: block; margin-bottom: 0"><a class="absToggle" onclick="absShow('absYLJACC2017Show'); absHide('absYLJACC2017Hide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>
@@ -238,6 +264,7 @@ Model identification and optimal vaccination for COVID-19"</a> (with R. Chinchil
             	of the talk
             </div>
         </li>
+<!--         5 -->
         <li>
             <a href="resources/YLM-CDC2016.pdf">"Analysis of different Lyapunov function constructions for interconnected hybrid systems"</a> (with A. Mironchenko and D. Liberzon), in <i>Proc. 55th IEEE Conference on Decision and Control (CDC 2016)</i>, 2016, pp. 465&ndash;470 (invited paper)
             <div id="absYLMCDC2016Hide" style="display: block; margin-bottom: 0"><a class="absToggle" onclick="absShow('absYLMCDC2016Show'); absHide('absYLMCDC2016Hide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>
@@ -249,6 +276,7 @@ Model identification and optimal vaccination for COVID-19"</a> (with R. Chinchil
             	of the talk
             </div>
         </li>
+<!--         4 -->
         <li>
             <a href="resources/YL-NOLCOS2016.pdf">"Finite data-rate stabilization of a switched linear system with unknown disturbance"</a> (with D. Liberzon), in <i>Proc. 10th IFAC Symposium on Nonlinear Control Systems (NOLCOS 2016)</i>, 2016, pp. 1103&ndash;1108
             <div id="absYLNOLCOS2016Hide" style="display: block; margin-bottom: 0"><a class="absToggle" onclick="absShow('absYLNOLCOS2016Show'); absHide('absYLNOLCOS2016Hide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>
@@ -259,6 +287,7 @@ Model identification and optimal vaccination for COVID-19"</a> (with R. Chinchil
             	<a href="resources/YL-NOLCOS2016-Slides.ppsx">the slides<span class="material-icons-outlined abs">file_download</span></a>
             	of the talk</div>
         </li>
+<!--         3 -->
         <li>
             <a href="resources/YL-ACC2015.pdf">"Stabilizing a switched linear system with disturbance by sampled-data quantized feedback"</a> (with D. Liberzon), in <i>Proc. 2015 American Control Conference (ACC 2015)</i>, 2015, pp. 2193&ndash;2198
             <div id="absYLACC2015Hide" style="display: block; margin-bottom: 0"><a class="absToggle" onclick="absShow('absYLACC2015Show'); absHide('absYLACC2015Hide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>
@@ -270,6 +299,7 @@ Model identification and optimal vaccination for COVID-19"</a> (with R. Chinchil
             	of the talk
             </div>
         </li>
+<!--         2 -->
         <li>
             <a href="resources/YL-CDC2014.pdf">"Input-to-state stability for switched systems with unstable subsystems: a hybrid Lyapunov construction"</a> (with D. Liberzon), in <i>Proc. 53rd IEEE Conference on Decision and Control (CDC 2014)</i>, 2014, pp. 6240&ndash;6245
             <div id="absYLCDC2014Hide" style="display: block; margin-bottom: 0"><a class="absToggle" onclick="absShow('absYLCDC2014Show'); absHide('absYLCDC2014Hide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>
@@ -281,6 +311,7 @@ Model identification and optimal vaccination for COVID-19"</a> (with R. Chinchil
             	of the talk
             </div>
         </li>
+<!--         1 -->
         <li>
             <a href="resources/MYL-MTNS2014.pdf">"Lyapunov small-gain theorems for not necessarily ISS hybrid systems"</a> (with A. Mironchenko and D. Liberzon), presented at the <i>21st International Symposium on Mathematical Theory of Networks and Systems (MTNS 2014)</i>, 2014, pp. 1001&ndash;1008
             <div id="absMYLMTNS2014Hide" style="display: block; margin-bottom: 0"><a class="absToggle" onclick="absShow('absMYLMTNS2014Show'); absHide('absMYLMTNS2014Hide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>

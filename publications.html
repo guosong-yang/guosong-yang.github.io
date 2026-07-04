@@ -51,25 +51,13 @@
 	<hr class="section">
 	<h3>Working papers</h3>
     <ul class="loose" style="list-style-type: none; padding-left: 0">
-<!-- 	4 -->
+<!-- 	3 -->
         <li>
             "Data-driven control of linear systems using quantized data" (with Z. Li), submitted for conference publication
             <div id="absLY2026Hide" style="display: block; margin-bottom: 0"><a class="absToggle" onclick="absShow('absLY2026Show'); absHide('absLY2026Hide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>
             <div id="absLY2026Show" style="display: none"><a class="absToggle" onclick="absHide('absLY2026Show'); absShow('absLY2026Hide')">Abstract<span class="material-icons-outlined abs">expand_less</span></a>
                 <p class="abs">This paper studies data-driven stabilization of unknown discrete-time linear systems using only quantized state measurements that take values in finite sets. The proposed approach consists of two stages. In the controller design stage,
 a dynamic quantization scheme is employed to collect data with bounded error, and a semidefinite program (SDP) is formulated from these measurements. We show that any feasible solution to the SDP yields a stabilizing feedback gain, provided that the solution satisfies a condition involving the quantization error bound and the collected data. In the feedback stabilization stage, the quantizer is updated via a Lyapunov-based design so that the number of quantization levels becomes fixed and the closed-loop system under quantized state feedback converges exponentially. A key feature of the proposed method is that the number of quantization levels remains finite in both stages and constant during stabilization. Simulation results illustrate the effectiveness of the approach.</p>
-            </div>
-        </li>
-<!-- 	3 -->
-        <li>
-            "Input-to-statestabilization of linear systems under data-rate
-constraints" (with M. Zamani), submitted for journal publication
-            <div id="absZY2026Hide" style="display: block; margin-bottom: 0"><a class="absToggle" onclick="absShow('absZY2026Show'); absHide('absZY2026Hide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>
-            <div id="absZY2026Show" style="display: none"><a class="absToggle" onclick="absHide('absZY2026Show'); absShow('absZY2026Hide')">Abstract<span class="material-icons-outlined abs">expand_less</span></a>
-                <p class="abs">We study feedback stabilization of continuous-time linear systems under finite data-rate constraints in the presence of unknown disturbances. A communication and control strategy based on sampled and quantized state measurements is proposed, where the quantization range is dynamically adjusted using reachable-set propagation and disturbance estimates derived from quantization parameters. The strategy alternates between stabilizing and searching stages to handle escapes from the quantization range and employs an additional quantization symbol to ensure robustness near the equilibrium. It guarantees input-to-state stability (ISS), improving upon existing results that yield only practical ISS or lack explicit data-rate conditions. Simulation results illustrate the effectiveness of the strategy.</p>
-            </div>
-            <div class="slides">See
-            	<a href="resources/ZY-2026-Report.pdf">the technical report</a> of this work
             </div>
         </li>
 <!-- 	2 -->
@@ -96,11 +84,22 @@ constraints" (with M. Zamani), submitted for journal publication
 	<hr class="section">
 	<h3>Journals</h3>
     <ul class="loose" style="list-style-type: none; padding-left: 0">
+<!-- 		10 -->
+        <li>
+            <a id="ZYLCSS" href="resources/ZY-LCSS.pdf">"Input-to-state stabilization of linear systems under data-rate constraints"</a> (with M. Zamani), <i>IEEE Control Systems Letters</i>, 2026, to be published
+            <div id="absZYLCSSHide" style="display: block; margin-bottom: 0"><a class="absToggle" onclick="absShow('absZYLCSSShow'); absHide('absZYLCSSHide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>
+            <div id="absZYLCSSShow" style="display: none"><a class="absToggle" onclick="absHide('absZYLCSSShow'); absShow('absZYLCSSHide')">Abstract<span class="material-icons-outlined abs">expand_less</span></a>
+                <p class="abs">We study feedback stabilization of linear systems under data-rate constraints in the presence of completely unknown disturbances. A communication and control strategy is proposed based on sampled and quantized state measurements, where the quantization range is dynamically adjusted using reachable-set approximations and a disturbance estimate derived from quantization parameters. Under a data-rate condition, the strategy guarantees input-to-state stability (ISS) with respect to the disturbance. An additional quantization symbol is introduced to establish ISS near the equilibrium. A simulation example illustrates the effectiveness of the proposed approach.</p>
+            </div>
+            <div class="slides">See
+            	<a href="resources/ZY-LCSS-Report.pdf">the technical report</a> of this work
+            </div>
+        </li>
 <!--     	9 -->
         <li>
-            <a id="SWTYBTCST" href="resources/SWTYB-TCST.pdf">"MagTile: A modular platform for controlling electromagnetically actuated agents for ethorobotics applications"</a> (with A. Sankar, C. Westbrook, M. Tuqan, and D. Burbano), <i>IEEE Transactions on Control Systems Technology</i>, pp. 1&ndash;15, 2026, early access
-            <div id="absSWTYBTCSTHide" style="display: block"><a class="absToggle" onclick="absShow('absSWTYBTCSTShow'); absHide('absSWTYBTCSTHide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>
-            <div id="absSWTYBTCSTShow" style="display: none"><a class="absToggle" onclick="absHide('absSWTYBTCSTShow'); absShow('absSWTYBTCSTHide')">Abstract<span class="material-icons-outlined abs">expand_less</span></a>
+            <a id="SWTYBTCST2026" href="resources/SWTYB-TCST2026.pdf">"MagTile: A modular platform for controlling electromagnetically actuated agents for ethorobotics applications"</a> (with A. Sankar, C. Westbrook, M. Tuqan, and D. Burbano), <i>IEEE Transactions on Control Systems Technology</i>, vol. 34, no. 3, pp. 1338&ndash;1352, May 2026
+            <div id="absSWTYBTCST2026Hide" style="display: block"><a class="absToggle" onclick="absShow('absSWTYBTCST2026Show'); absHide('absSWTYBTCST2026Hide')">Abstract<span class="material-icons-outlined abs">expand_more</span></a></div>
+            <div id="absSWTYBTCST2026Show" style="display: none"><a class="absToggle" onclick="absHide('absSWTYBTCST2026Show'); absShow('absSWTYBTCST2026Hide')">Abstract<span class="material-icons-outlined abs">expand_less</span></a>
                 <p class="abs">Ethorobotics, the study of animal–robot interactions, has advanced behavioral research by enabling controlled, repeatable experiments through the use of biomimetic robotic agents. Existing platforms, however, often lack flexibility, scalability, and computational tools for in-silico experimentation, limiting their easy deployment across diverse experimental configurations. Here, we introduce MagTile, a modular and scalable platform for controlling ensembles of electromagnetically actuated agents. Our design utilizes standard components and 3-D-printed parts, enabling multiagent actuation without the need for complex onboard electronics. We formulate a mathematical model of MagTile and analyze its convergence properties using Lyapunov stability theory. The model serves as the foundation for establishing a computational framework, facilitating simulation, testing, and optimization of experimental conditions prior to physical deployment, thereby improving eﬃciency and reducing trial-and-error experimentation. The eﬀectiveness of our platform was validated through a series of illustrative experiments showcasing multiagent coordination, vision-based collision avoidance, and collective behavior using biomimetic fish.</p>
             </div>
         </li>

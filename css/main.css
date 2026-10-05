@@ -57,6 +57,10 @@ ul.tight li {
     margin: 0 0 3px 0;
 }
 
+ul.lesstight li {
+    margin: 0 0 6px 0;
+}
+
 ul.loose li {
     margin: 0 0 20px 0;
 }
